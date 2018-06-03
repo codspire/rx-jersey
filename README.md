@@ -71,6 +71,12 @@ public interface GithubApi {
 }
 
 ```
+example-rxjava2 links
+* http://localhost:8080/example/github
+* http://localhost:8080/example/echo/test
+* http://localhost:8080/example/echo/maybe/test
+* http://localhost:8080/example/echo/observable/test
+* http://localhost:8080/example/echo/flowable/test
 
 ## Licence
 [MIT](LICENSE.txt)
