@@ -6,4 +6,5 @@ include 'rxjava-client'
 include 'rxjava2-client'
 include 'dropwizard'
 include 'example'
-
+include 'dropwizard-rxjava2'
+include 'example-rxjava2'

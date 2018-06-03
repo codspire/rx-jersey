@@ -1,5 +1,6 @@
 package net.winterly.rxjersey.server.rxjava2;
 
+import net.winterly.rxjersey.server.RxRequestInterceptor;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import org.glassfish.jersey.server.spi.internal.ResourceMethodDispatcher;
 import org.glassfish.jersey.server.spi.internal.ResourceMethodInvocationHandlerProvider;
@@ -15,9 +16,9 @@ import java.util.List;
  */
 public final class RxJerseyServerFeature implements Feature {
 
-    private final List<Class<? extends CompletableRequestInterceptor>> interceptors = new LinkedList<>();
+    private final List<Class<? extends RxRequestInterceptor>> interceptors = new LinkedList<>();
 
-    public RxJerseyServerFeature register(Class<? extends CompletableRequestInterceptor> interceptor) {
+    public RxJerseyServerFeature register(Class<? extends RxRequestInterceptor> interceptor) {
         interceptors.add(interceptor);
         return this;
     }
